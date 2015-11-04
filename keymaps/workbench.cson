@@ -1,0 +1,6 @@
+'atom-workspace':
+  'ctrl-alt-o': 'api-workbench:gotoDecl'
+  'ctrl-g': 'api-workbench:findUsages'
+  'ctrl-alt-e':'api-workbench:quickFix'
+  'ctrl-o':'api-workbench:quickOutline'
+  'ctrl-q':'api-workbench:quick-commands'
