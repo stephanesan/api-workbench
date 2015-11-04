@@ -1,0 +1,53 @@
+'context-menu':
+    '.tree-view .file .name[data-name$=\\.raml]' : [{label: 'Open RAML Outline', command:  'api-workbench:todo'}]
+
+    '.raml-outline': [ {label: 'Rename RAML Element', command: 'api-workbench:rename'}, {label: 'Find usages', command:  'api-workbench:findUsages'}]
+
+    'atom-text-editor[data-grammar="source raml"]': [{label: 'Go To Definition (RAML)', command:  'api-workbench:gotoDecl'}, {label: 'Rename RAML Element', command: 'api-workbench:rename'}, {label: 'Select current node', command:  'api-workbench:selectNode'},{label: 'Find usages', command:  'api-workbench:findUsages'}]
+'menu': [
+  {
+    label: 'Packages'
+    'submenu': [
+     {
+       'label': 'API Workbench'
+       'submenu': [
+
+        {
+          'label': 'Create RAML Project'
+          'command': 'api-workbench:newProject'
+        }
+        {
+          'label': 'Get APIs from ...'
+          'submenu': [
+            {
+              'label': 'Popular APIs ( Community )'
+              'command': 'api-workbench:popular-apis'
+            }
+           ]
+        }
+        { type: 'separator' }
+        {
+          'label': 'Open API Console'
+          'command': 'api-workbench:console'
+        }
+        {
+          'label': 'Open RAML Editor Tools'
+          'command': 'api-workbench:editorTools'
+        }
+        {
+          'label': 'Show Quick Commands'
+          'command': 'api-workbench:quick-commands'
+        }
+        { type: 'separator' }
+        {
+          'label': 'Go To Definition'
+          'command': 'api-workbench:gotoDecl'
+        }
+        {
+          'label': 'Find usages'
+          'command': 'api-workbench:findUsages'
+        }
+      ]
+    }]
+  }
+]
