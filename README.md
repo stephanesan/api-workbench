@@ -2,13 +2,29 @@
 
 API Workbench, a rich, full-featured integrated development environment (IDE) for designing, building, testing, documenting and sharing RESTful HTTP APIs. It supports both RAML 0.8 and the recently launched RAML 1.0. [RAML](http://raml.org) makes it easy to manage the whole API lifecycle from design to sharing.
 
+NOTE: This version includes a [hack](https://github.com/stephanesan/api-workbench/commit/fa532a4efcad07f8ca789c2b31a470b268f9393b) to resolve json-schema dependencies on the local filesystem.
+
 ## Installation
 
+On windows:
 ```
-apm install api-workbench
+cd C:\Users\{username}\.atom\packages\
+rmdir .\api-workbench /s /q
+git clone https://github.com/stephanesan/api-workbench.git
+cd api-workbench
+apm link
+apm install
 ```
 
-Alternatively, open `Settings/Preferences -> Install` and search for `api-workbench`.
+On linux:
+```
+cd ~/.atom/packages
+rm –rf api-workbench
+git clone https://github.com/stephanesan/api-workbench.git
+cd api-workbench
+apm link
+apm install
+```
 
 ## More Information
 
